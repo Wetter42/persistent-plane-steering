@@ -19,7 +19,7 @@ Note, it may seem unnecessarily complex, but this is due to the few use-cases I'
 1. When using Vmenu and teleporting / spawning into a car, "CEventNetworkPlayerEnteredVehicle" gets triggered twice, so I needed a flag to prevent the event from spawning two separate threads for no reason
 2. When restarting the resource, I want the script to account for any players already in vehicles.  This means we have to use a thread flag to track and prevent multiple instances of threads kicking off unnecessarily.
 
-This should alow for appropriate testing, configuration, and some fun.  
+This should allow for appropriate testing, configuration, and some fun.  
 
 ## Installation instructions
 To install, follow the same guidance as any resource:
